@@ -32,7 +32,7 @@
 
 	<div id="container-contact" class="container-fluid px-0">	
 
-		<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg sticky-top">
+		<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg">
 			<a href="home.html" class="navbar-brand"><i class="far fa-hand-peace"></i>Hello </a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
@@ -57,35 +57,35 @@
 			</div> <!-- end navcontent -->
 		</nav> <!-- end nav -->
 
-		<div class="row">
+		<div class="row last">
 			<header class="col-12 col-md-12 col-lg-12">
 				<h1 class="text-center py-3"> Contact Us Page </h1>
 			</header>
-			<div class="col-12 col-md-6 col-lg-6 p-3">
+			<div class="col-12 col-md-6 col-lg-6">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7322816547917!2d121.03122371438788!3d14.557296282040195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c901e242f095%3A0xcbab77db1aac9063!2sENZO+BUILDING!5e0!3m2!1sen!2sph!4v1542700162681" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div> <!-- end of left side -->
 
-			<div class="col-12 col-md-6 col-lg-6 p-3">
+			<div class="col-12 col-md-6 col-lg-6">
 
-				<form>
+				<form class="p-3">
 					<div class="form-group">
 						<label for="username"> Username: </label>
-						<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here">
+						<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here" required>
 					</div> <!-- end username form group -->
 
 					<div class="form-group">
 						<label for="email"> Email: </label>
-						<input id="email" class="form-control" type="email" placeholder="Enter Your Email Here">
+						<input id="email" class="form-control" type="email" placeholder="Enter Your Email Here" required>
 					</div> <!-- end email form group -->
 
 					<div class="form-group">
 						<label for="contact"> Contact Number: </label>
-						<input id="contact" class="form-control" type="text" placeholder="Enter Your Contact Details Here">
+						<input id="contact" class="form-control" type="text" placeholder="Enter Your Contact Details Here" required>
 					</div> <!-- end contact form group -->
 
 					<div class="form-group">
 						<label for="message"> Message: </label>
-						<textarea id="message" class="form-control" placeholder="Enter Your Message Here"></textarea>
+						<textarea id="message" class="form-control" placeholder="Enter Your Message Here" required></textarea>
 					</div>
 
 					<button class="btn btn-block btn-success"> Submit </button>
