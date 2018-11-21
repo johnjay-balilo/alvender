@@ -3,27 +3,19 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Merriweather', serif;
-	overflow-x: hidden;
 }
 
 html {
 	scroll-behavior: smooth;
 	height: 100%;
+	overflow-x: hidden;
 }
-
 
 #body-home {
 	position: relative;
 }
 
-#test {
-	position: relative;
-	height: 500px;
-	overflow-y: scroll;
-	scroll-behavior: smooth;
-}
-
-nav {
+#nav-top {
 	background-color: rgba(68, 28, 82, 0.97);
 }
 
@@ -31,6 +23,9 @@ nav li[class*=active] {
 	border-bottom: 3px solid #9C8AA5;
 }
 
+#carousel-row {
+	width: 100%;
+}
 
 footer,
 footer div {
@@ -39,12 +34,31 @@ footer div {
 }
 
 footer {
+	width: 100%;
 	position: absolute;
 	bottom: 0;
-	left: 50%;
-	width: 100%;
-	transform: translate(-50%, 0);
-	padding: 1%;
+}
+
+#container-gall,
+#container-about,
+#container-contact,
+#container-home {
+	position: relative;
+	min-height: 100vh;
+}
+
+#topic1 {
+	height: 50vh;
+	background: url(../images/topic1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#topic2 {
+	height: 50vh;
+	background: url(../images/topic2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 /*landing page*/
@@ -91,13 +105,36 @@ footer {
 
 /*home page*/
 #home-landing {
-	background-color: #333;
+	background-color: #8C489F;
 	color: #fff;
-	padding: 20%;
+	padding: 10%;
+}
+
+#home-content {
+	margin-right: 0;
+}
+
+#sidenav {
+	position: sticky;
+	top: 20%;
+}
+
+#card1 .card-title,
+#card2 .card-title {
+	background-color: #C3C3E5;
+	color: #333;
+}
+
+.inside-light {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.inside-dark {
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 #carousel {
-	background-color: #BDAEC6;
+	background-color: #C3C3E5;
 }
 
 .carousel-item {
@@ -117,6 +154,8 @@ footer {
 	background-color: #333;
 }
 
+
+/*contact page*/
 iframe {
 	width: 100%;
 	height: 100%;
@@ -124,9 +163,73 @@ iframe {
 	overflow: hidden;
 }
 
+/*about page*/
+#jumbotron-about {
+	background-color: #141414;
+	height: 90vh;
+	border-radius: 0;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+#landing-about {
+	color: #f2f2f2;
+	font-size: 5em;
+	padding-top: 20vh;
+	letter-spacing: 5px;
+}
+
+#down {
+	width: 100%;
+	height: 30vh;
+	margin: 0 auto;
+	color: #f2f2f2;
+}
+
+#mission {
+	height: 100%;
+	background-color: #F1F0FF;
+	color: #8C489F;
+}
+
+#vision {
+	height: 100%;
+	background-color: #8C489F;
+	color: #F1F0FF;
+}
+
+.last {
+	padding-bottom: 80px;
+}
 
 
 
+
+
+.about-tags {
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*gallery page*/
+#head-gall {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+	background-color: #141414;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+}
+
+div[data-toggle="modal"] {
+	width: 100%;
+	height: 30vh;
+}
+
+div[data-toggle="modal"] > img {
+	height: 80%;
+}
 
 
 
@@ -137,6 +240,13 @@ iframe {
 		width: 70%;
 	}
 
+	#head-gall > h1 {
+		font-size: 400%;
+	}
+
+	div[data-toggle="modal"] {
+		height: 50vh;
+	}
 
 
 }

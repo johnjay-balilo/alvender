@@ -25,13 +25,13 @@
 
 	<title> Home </title>
 </head>
-<body id="body-home" data-spy="scroll" data-target="#container">	
+<body id="body-home" data-spy="scroll" data-target="#sidenav" data-offset="0">	
 
-	<div id="container-home" class="container-fluid">
-		<h1 id="home-landing" class="text-center"> Welcome Home! </h1>
+	<div id="container-home" class="container-fluid px-0">
+		
 	
-		<nav class="navbar navbar-dark navbar-expand-lg sticky-top">
-			<a href="home.html" class="navbar-brand"><i class="far fa-hand-peace"></i>Hello </a>
+		<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg fixed-top">
+			<a href="home.html" class="navbar-brand"><i class="far fa-hand-peace"></i> Hello </a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
 				<span class="navbar-toggler-icon"></span>
@@ -55,98 +55,165 @@
 			</div> <!-- end navcontent -->
 		</nav> <!-- end nav -->
 
+		<h1 id="home-landing" class="text-center"> Welcome Home! </h1>
 
 
-		<section class="container mb-5">
-			<div class="row">
-				<div id="carousel" class="col-12 col-md-12 carousel slide p-4" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel" data-slide-to="1"></li>
-						<li data-target="#carousel" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item text-center active">							
-							<img class="img-fluid" src="assets/images/ca1.jpg">							
-							<div class="carousel-item-caption d-none d-md-block">
-								<h5> Carousel Item 1 </h5>
-								<p> Test </p>
-								<a href="" target="_blank" class="btn btn-dark btn-block mb-3"> Visit . </a>
+		<section id="home-content" class="row">
+			<div class="col-2 d-none d-md-block">
+				<nav id="sidenav" class="navbar navbar-light bg-light shadow">
+					<nav class="nav nav-tabs flex-column">
+						<a class="nav-link my-3" href="#card1"> What is Alzheimer's disease? </a>
+					</nav>
+					<nav class="nav nav-tabs flex-column">
+						<a class="nav-link my-3" href="#card2"> Dos and Don'ts </a>
+					</nav>
+					<nav class="nav nav-tabs flex-column">
+						<a class="nav-link my-3" href="#carousel"> Seminar Gallery </a>
+					</nav>
+
+				</nav>
+
+			</div>
+
+			<div class="col-12 col-md-10 container mb-5">
+				<div class="row">
+					<div id="col1" class="col-12">
+						<div id="card1" class="card">
+							<h3 class="card-title p-3 mb-0"> What is Alzheimer's disease? </h3>						
+							<div id="topic1" class="card-body">
+								<div class="inside-light p-3 shadow">
+									<p class="card-text"> Text placeholder. </p>
+									<a class="btn btn-outline-dark" href=""> Learn More</a>
+								</div>								
+
+							</div> <!-- end card body -->				
+						</div> <!-- end card -->
+					</div> <!-- end col -->
+				</div> <!-- end row -->
+
+				<div class="row">
+					<div id="col2" class="col-12">
+						<div id="card2" class="card">
+							<h3 class="card-title p-3 mb-0"> Dos and Don'ts </h3>			
+							<div id="topic2" class="card-body">			
+								<div class="inside-dark p-3 shadow">
+									<p class="card-text"> Text placeholder. </p>
+									<a class="btn btn-outline-dark" href=""> Learn More</a>
+								</div>					
+							</div> <!-- end card body -->
+						</div> <!-- end card -->
+					</div> <!-- end col -->
+				</div> <!-- end row -->
+
+
+
+
+				<div id="carousel-row" class="row">
+					<div id="carousel" class="col-12 col-md-12 carousel slide p-4 ml-3" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel" data-slide-to="1"></li>
+							<li data-target="#carousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item text-center active">							
+								<img class="img-fluid" src="assets/images/ca1.jpg">							
+								<div class="carousel-item-caption d-none d-md-block">
+									<h5> Carousel Item 1 </h5>
+									<p> Test </p>
+									<a href="" target="_blank" class="btn btn-dark btn-block mb-3"> Visit . </a>
+								</div>
+							</div>
+							<div class="carousel-item text-center">							
+								<img class="img-fluid" src="assets/images/ca2.jpg">							
+								<div class="carousel-item-caption d-none d-md-block">
+									<h5> Carousel Item 2 </h5>
+									<p> Testing </p>
+									<a href="" class="btn btn-dark btn-block mb-3"> Visit . </a>
+								</div>
+							</div>
+							<div class="carousel-item text-center">							
+								<img class="img-fluid" src="assets/images/ca3.jpg">							
+								<div class="carousel-item-caption d-none d-md-block">
+									<h5> Carousel Item 3 </h5>
+									<p> Testing </p>
+									<a href="" class="btn btn-dark btn-block mb-3"> Visit . </a>
+								</div>
 							</div>
 						</div>
-						<div class="carousel-item text-center">							
-							<img class="img-fluid" src="assets/images/ca2.jpg">							
-							<div class="carousel-item-caption d-none d-md-block">
-								<h5> Carousel Item 2 </h5>
-								<p> Testing </p>
-								<a href="" class="btn btn-dark btn-block mb-3"> Visit . </a>
-							</div>
-						</div>
-						<div class="carousel-item text-center">							
-							<img class="img-fluid" src="assets/images/ca3.jpg">							
-							<div class="carousel-item-caption d-none d-md-block">
-								<h5> Carousel Item 3 </h5>
-								<p> Testing </p>
-								<a href="" class="btn btn-dark btn-block mb-3"> Visit . </a>
-							</div>
-						</div>
+						<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only"> Previous </span>
+						</a>
+						<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only"> Next </span>
+						</a>
 					</div>
-					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only"> Previous </span>
-					</a>
-					<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only"> Next </span>
-					</a>
-				</div>
-			</div>			
+				</div>			
+			
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-4 col-lg-4">
+							<div class="card">
+								<img src="">
+								<div class="card-body">
+									<h3 class="card-title"> Service 1 </h3>
+									<p class="card-text"> Short description about the service of the company. </p>
+								</div> <!-- end card body -->
+							</div> <!-- end card -->
+						</div> <!-- end column -->
+						<div class="col-12 col-md-4 col-lg-4">
+							<div class="card">
+								<img src="">
+								<div class="card-body">
+									<h3 class="card-title"> Service 2 </h3>
+									<p class="card-text"> Short description about the service of the company. </p>
+								</div> <!-- end card body -->
+							</div> <!-- end card -->
+						</div> <!-- end column -->			
+						<div class="col-12 col-md-4 col-lg-4">
+							<div class="card">
+								<img src="">
+								<div class="card-body">
+									<h3 class="card-title"> Service 3 </h3>
+									<p class="card-text"> Short description about the service of the company. </p>
+								</div> <!-- end card body -->
+							</div> <!-- end card -->
+						</div> <!-- end column -->			
+					</div> <!-- end row -->
+				</div> <!-- end container -->
+
+			</div>
+			
 		</section>
+		
 
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-4 col-lg-4">
-					<div class="card">
-						<img src="">
-						<div class="card-body">
-							<h3 class="card-title"> Service 1 </h3>
-							<p class="card-text"> Short description about the service of the company. </p>
-						</div> <!-- end card body -->
-					</div> <!-- end card -->
-				</div> <!-- end column -->
-				<div class="col-12 col-md-4 col-lg-4">
-					<div class="card">
-						<img src="">
-						<div class="card-body">
-							<h3 class="card-title"> Service 2 </h3>
-							<p class="card-text"> Short description about the service of the company. </p>
-						</div> <!-- end card body -->
-					</div> <!-- end card -->
-				</div> <!-- end column -->			
-				<div class="col-12 col-md-4 col-lg-4">
-					<div class="card">
-						<img src="">
-						<div class="card-body">
-							<h3 class="card-title"> Service 3 </h3>
-							<p class="card-text"> Short description about the service of the company. </p>
-						</div> <!-- end card body -->
-					</div> <!-- end card -->
-				</div> <!-- end column -->			
-			</div> <!-- end row -->
-		</div> <!-- end container -->
 
-		<footer class="footer">
+		
+
+		<footer class="footer p-3">
 			<div class="row">
 				<div class="col-12 col-md-6 offset-md-3">
 					<p class="text-center mb-0"> John Balilo | Tuitt Coding Bootcamp &copy; 2018 </p>
 				</div>
 				<div class="col-8 col-md-3 text-right">
-					<a href="https://github.com/johnjay-balilo" target="_blank"><img class="img-fluid" src="assets/images/github.png"></a>
-					<a href="https://gitlab.com/johnjay.balilo" target="_blank"><img class="img-fluid" src="assets/images/gitlab.png"></a>
-					<a href="mailto:johnjay.balilo@gmail.com" target="_blank"><img class="img-fluid" src="assets/images/gmail.png"></a></p>
-				</div>	
+					<a href="https://github.com/johnjay-balilo" target="_blank">
+						<img class="img-fluid" src="assets/images/github.png">
+					</a>
+					<a href="https://gitlab.com/johnjay.balilo" target="_blank">
+						<img class="img-fluid" src="assets/images/gitlab.png">
+					</a>
+					<a href="mailto:johnjay.balilo@gmail.com" target="_blank">
+						<img class="img-fluid" src="assets/images/gmail.png">
+					</a>
+				</div>
 			</div>
 		</footer> <!-- end footer -->
+
+
+
 	</div> <!-- end container fluid -->
 
 	<div class="container"></div>
@@ -178,12 +245,12 @@
 
 
 
-
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
