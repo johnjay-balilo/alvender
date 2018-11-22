@@ -29,6 +29,40 @@
 </head>
 <body>
 
+	<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg fixed-top">
+		<a href="home.html" class="navbar-brand"><i class="fas fa-hand-holding-heart"></i> Hello </a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navcontent" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="home.html" class="nav-link"> Home </a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Info </a>
+					<div class="dropdown-menu">
+						<a href="what-is.html" class="dropdown-item"> What is </a>
+						<a href="dos-and-donts.html" class="dropdown-item"> Dos and Don'ts </a>
+						<div class="dropdown-divider"></div>
+						<a href="faq.html" class="dropdown-item"> FAQ </a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="gallery.html" class="nav-link"> Gallery </a>
+				</li>
+				<li class="nav-item active">
+					<a href="about.html" class="nav-link"> About </a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link"> Contact </a>
+				</li>
+			</ul>
+		</div> <!-- end navcontent -->
+	</nav> <!-- end nav -->
+
 
 	<div id="container-about" class="container-fluid px-0">	
 
@@ -39,31 +73,6 @@
 				<i class="fas fa-chevron-down"></i>
 			</a>
 		</section> <!-- end jumbotron -->
-
-		<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg sticky-top">
-			<a href="home.html" class="navbar-brand"><i class="far fa-hand-peace"></i> Hello </a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navcontent" class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="home.html" class="nav-link"> Home </a>
-					</li>
-					<li class="nav-item active">
-						<a href="about.html" class="nav-link"> About </a>
-					</li>
-					<li class="nav-item">
-						<a href="gallery.html" class="nav-link"> Gallery </a>
-					</li>
-					<li class="nav-item">
-						<a href="contact.html" class="nav-link"> Contact </a>
-					</li>
-				</ul>
-			</div> <!-- end navcontent -->
-		</nav> <!-- end nav -->
 
 		<div class="row last">
 			<section id="mission" class="p-5">
@@ -88,7 +97,7 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</section>
 
-			<section id="vision" class="p-5 text-right last">
+			<section id="vision" class="p-5 text-right">
 				<h2 class="about-tags mb-5"> Our Vision </h2>
 				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

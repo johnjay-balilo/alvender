@@ -29,36 +29,46 @@
 </head>
 <body>
 
+	<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg fixed-top">
+		<a href="home.html" class="navbar-brand"><i class="fas fa-hand-holding-heart"></i> Hello </a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navcontent" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="home.html" class="nav-link"> Home </a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Info </a>
+					<div class="dropdown-menu">
+						<a href="what-is.html" class="dropdown-item"> What is </a>
+						<a href="dos-and-donts.html" class="dropdown-item"> Dos and Don'ts </a>
+						<div class="dropdown-divider"></div>
+						<a href="faq.html" class="dropdown-item"> FAQ </a>
+					</div>
+				</li>
+				<li class="nav-item active">
+					<a href="gallery.html" class="nav-link"> Gallery </a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link"> About </a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link"> Contact </a>
+				</li>
+			</ul>
+		</div> <!-- end navcontent -->
+	</nav> <!-- end nav -->
 
 	<div id="container-gall" class="container-fluid px-0">	
 
-		<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg fixed-top">
-			<a href="home.html" class="navbar-brand"><i class="far fa-hand-peace"></i>Hello </a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navcontent" class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="home.html" class="nav-link"> Home </a>
-					</li>
-					<li class="nav-item">
-						<a href="about.html" class="nav-link"> About </a>
-					</li>
-					<li class="nav-item active">
-						<a href="gallery.html" class="nav-link"> Gallery </a>
-					</li>
-					<li class="nav-item">
-						<a href="contact.html" class="nav-link"> Contact </a>
-					</li>
-				</ul>
-			</div> <!-- end navcontent -->
-		</nav> <!-- end nav -->
+	
 
 		<div class="container-fluid last">
-			<header id="head-gall" class="card">
+			<header id="head-gall">
 				<h1 class="display-3 text-center"> Gallery Page </h1>
 			</header>
 

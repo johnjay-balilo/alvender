@@ -25,10 +25,9 @@
 
 
 
-	<title> Contact Us </title>
+	<title> Dos and Dont's </title>
 </head>
 <body>
-
 
 	<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg fixed-top">
 		<a href="home.html" class="navbar-brand"><i class="fas fa-hand-holding-heart"></i> Hello </a>
@@ -42,11 +41,11 @@
 				<li class="nav-item">
 					<a href="home.html" class="nav-link"> Home </a>
 				</li>
-				<li class="nav-item dropdown">
+				<li class="nav-item dropdown active">
 					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Info </a>
 					<div class="dropdown-menu">
 						<a href="what-is.html" class="dropdown-item"> What is </a>
-						<a href="dos-and-donts.html" class="dropdown-item"> Dos and Don'ts </a>
+						<a href="dos-and-donts.html" class="dropdown-item active"> Dos and Don'ts </a>
 						<div class="dropdown-divider"></div>
 						<a href="faq.html" class="dropdown-item"> FAQ </a>
 					</div>
@@ -57,54 +56,60 @@
 				<li class="nav-item">
 					<a href="about.html" class="nav-link"> About </a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a href="contact.html" class="nav-link"> Contact </a>
 				</li>
 			</ul>
 		</div> <!-- end navcontent -->
 	</nav> <!-- end nav -->
 
-	<div id="container-contact" class="container-fluid px-0">	
+	<div id="container-faq">
 
-		<div class="row last">
-			<header class="col-12 col-md-12 col-lg-12">
-				<h1 class="text-center py-3"> Contact Us Page </h1>
-			</header>
-			<div class="col-12 col-md-6 col-lg-6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7322816547917!2d121.03122371438788!3d14.557296282040195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c901e242f095%3A0xcbab77db1aac9063!2sENZO+BUILDING!5e0!3m2!1sen!2sph!4v1542700162681" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div> <!-- end of left side -->
+		<header id="head-gall">
+			<h1 class="display-3 text-center"> Dos and Don'ts </h1>
+		</header>
 
-			<div class="col-12 col-md-6 col-lg-6">
+		<div class="row">
+			<div class="col-6">
 
-				<form class="p-3">
-					<div class="form-group">
-						<label for="username"> Username </label>
-						<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here" required>
-					</div> <!-- end username form group -->
+				<table class="table table-borderless table-green">
+					<thead>
+						<tr>
+							<th scope="col"> Dos </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td> &#x2714; </td></tr>
+						<tr><td> &#x2714; </td></tr>
+						<tr><td> &#x2714; </td></tr>
+						<tr><td> &#x2714; </td></tr>
+					</tbody>
+				</table>
 
-					<div class="form-group">
-						<label for="email"> Email </label>
-						<input id="email" class="form-control" type="email" placeholder="Enter Your Email Here" required>
-					</div> <!-- end email form group -->
 
-					<div class="form-group">
-						<label for="contact"> Contact Number </label>
-						<input id="contact" class="form-control" type="text" placeholder="Enter Your Contact Details Here" required>
-					</div> <!-- end contact form group -->
+			</div>
+			<div class="col-6">
 
-					<div class="form-group">
-						<label for="message"> Message </label>
-						<textarea id="message" class="form-control" placeholder="Enter Your Message Here" required></textarea>
-					</div>
+				<table class="table table-borderless table-red">
+					<thead>
+						<tr>
+							<th scope="col"> Don'ts </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td> &times; </td></tr>
+						<tr><td> &times; </td></tr>
+						<tr><td> &times; </td></tr>
+						<tr><td> &times; </td></tr>
+					</tbody>
+				</table>
 
-					<button class="btn btn-info text-right px-4"> Submit </button>
-				</form>
-				
-				
-			</div> <!-- end of right side -->
-		</div> <!-- end row -->
+			</div>
+		</div>
 
-		<footer class="footer">
+
+
+		<footer class="footer p-3">
 			<div class="row">
 				<div class="col-12 col-md-6 offset-md-3">
 					<p class="text-center mb-0"> John Balilo | Tuitt Coding Bootcamp &copy; 2018 </p>
@@ -117,10 +122,9 @@
 			</div>
 		</footer> <!-- end footer -->
 
-	</div> <!-- end container fluid -->
 
+	</div> <!-- end container faq -->
 
-	
 
 
 

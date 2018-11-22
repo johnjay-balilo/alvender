@@ -8,60 +8,73 @@
 html {
 	scroll-behavior: smooth;
 	height: 100%;
-	overflow-x: hidden;
 }
 
-#body-home {
-	position: relative;
-}
 
+/*main navbar*/
 #nav-top {
-	background-color: rgba(68, 28, 82, 0.97);
+	background-color: rgba(68, 50, 102, 0.97);
+	width: 100%;
 }
 
 nav li[class*=active] {
 	border-bottom: 3px solid #9C8AA5;
 }
 
-#carousel-row {
-	width: 100%;
+.dropdown-item[class*=active] {
+	background-color: #9C8AA5;
+	color: black;
 }
 
-footer,
-footer div {
-	background-color: #421C52;
-	color: white;
+.dropdown-item:hover {
+	background-color: #C3C3E5;
 }
 
-footer {
+/*end main navbar*/
+
+
+
+
+
+.row {
 	width: 100%;
-	position: absolute;
-	bottom: 0;
-	height: 70px;
+	padding: 0px;
+	margin: 0;
 }
 
 #container-gall,
 #container-about,
 #container-contact,
-#container-home {
+#container-home, 
+#container-faq {
 	position: relative;
 	min-height: 100vh;
 	max-width: 100%;
+	margin-top: 60px;
+	background: url(../images/lavender.png);
+	background-position: left;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
 }
 
-#topic1 {
-	height: 50vh;
-	background: url(../images/topic1.jpg);
-	background-attachment: fixed;
-	background-size: cover;
+
+
+footer {
+	background-color: #421C52;
+	color: white;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 70px;
+	padding: 20px;
 }
 
-#topic2 {
-	height: 50vh;
-	background: url(../images/topic2.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-}
+
+
+
+
+
+
 
 /*landing page*/
 #jumbotron {
@@ -104,22 +117,66 @@ footer {
 	transform: translate(-50%, -50%);
 	width: 30%;
 }
+/*end landing page*/
+
+
 
 /*home page*/
 #home-landing {
 	background-color: #8C489F;
-	color: #fff;
+	background: url(../images/lavender-bg.JPG);
+	background-size: cover;
+	color: #333;
 	padding: 10%;
-}
-
-#home-content {
-	margin-right: 0;
+	width: 100%;
+	margin-top: 0;
 }
 
 #sidenav {
 	position: sticky;
-	top: 20%;
+	top: 80px;
+	height: 80vh;
 }
+
+#sidenav a {
+	color: #333;
+	border-radius: 5px;
+	border-bottom: 3px solid #9C8AA5;
+}
+
+#sidenav a:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+#sidenav a[class*=active] {
+	border-bottom: 1px solid #9C8AA5;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+#goto-card1,
+#goto-card2,
+#goto-carousel { 
+  margin-top: -60px; 
+  padding-bottom: 60px;
+  display: block;
+}
+
+#topic1 {
+	height: 50vh;
+	background: url(../images/topic1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#topic2 {
+	height: 50vh;
+	background: url(../images/topic2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
 
 #card1 .card-title,
 #card2 .card-title {
@@ -128,7 +185,7 @@ footer {
 }
 
 .inside-light {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .inside-dark {
@@ -140,7 +197,6 @@ footer {
 }
 
 .carousel-item {
-	width: 100%;
 	height: 80vh;
 }
 
@@ -153,8 +209,18 @@ footer {
 	border-radius: 50%;
 	height: 20px;
 	width: 20px;
-	background-color: #333;
+	background-color: #fff;
 }
+/*end home page*/
+
+
+
+
+
+
+
+
+
 
 
 /*contact page*/
@@ -164,6 +230,39 @@ iframe {
 	padding: 5px;
 	overflow: hidden;
 }
+
+.form-control {
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 2px solid #8C489F;
+	border-radius: 0;
+	opacity: 0.8;
+}
+
+.form-control:focus {
+	border-color: #443266;
+	box-shadow: 0 0 5px rgba(68, 50, 102, 1);
+	opacity: 1;
+}
+
+.form-control::placeholder {
+	opacity: 1;
+	color: #C3C3E5;
+}
+
+.btn-success {
+	background-color: #C3C3E5;
+}
+/*end contact page*/
+
+
+
+
+
+
+
+
+
 
 /*about page*/
 #jumbotron-about {
@@ -205,6 +304,11 @@ iframe {
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
 }
+/*end about page*/
+
+
+
+
 
 
 
@@ -232,18 +336,90 @@ div[data-toggle="modal"] > img {
 .last {
 	padding-bottom: 70px;
 }
+/*end gallery page*/
 
 
 
-/*desktop styles*/
-@media only screen and (max-width: 540px) {
+
+
+
+
+
+
+
+/*faq page*/
+
+/*end faq page*/
+
+
+
+
+
+
+
+
+
+
+
+/*what is page*/
+
+/*end what is page*/
+
+
+
+
+
+
+
+
+
+
+
+/*dos and donts page*/
+.table-green > tbody > tr:nth-child(even) > td {
+	background-color: rgb(40, 167, 69, 0.3);
+}
+
+.table-green > thead > tr > th {
+	background-color: rgb(40, 167, 69, 0.7);
+}
+
+.table-red > tbody > tr:nth-child(even) > td{
+	background-color: rgb(217, 83, 79, 0.3);
+}
+
+
+.table-red > thead > tr > th {
+	background-color: rgb(217, 83, 79, 0.7);
+}
+/*end dos and donts page*/
+
+
+
+
+
+
+
+
+
+
+/*mobile styles*/
+@media only screen and (max-width: 425px) {
 	#jumbo-land .container {
 		left: 50%;
 		width: 70%;
 	}
 
+	#home-landing {
+		background-color: #8C489F;
+		color: #fff;
+		padding: 10%;
+		width: 100%;
+		margin-top: 56px;
+	}
+
 	#head-gall > h1 {
-		font-size: 400%;
+		font-size: 350%;
 	}
 
 	div[data-toggle="modal"] {
@@ -251,18 +427,26 @@ div[data-toggle="modal"] > img {
 	}
 
 	footer {
-		height: 150px;
+		height: 120px;
 	}
 
 	.last {
-		padding-bottom: 150px;
+		padding-bottom: 120px;
+	}
+
+	#container-gall,
+	#container-about,
+	#container-contact,
+	#container-home, 
+	#container-faq {
+		margin-top: 0px;
 	}
 
 
-}
 
-/*desktop styles*/
-@media only screen and (max-width: 1024px) {
+
+/*tablet styles*/
+@media only screen and (max-width: 768px) {
 	#jumbo-land .container {
 		left: 50%;
 		width: 70%;
