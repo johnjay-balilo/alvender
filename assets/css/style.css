@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Merriweather', serif;
+	font-family: 'Comfortaa', cursive;
 }
 
 html {
@@ -12,6 +12,10 @@ html {
 
 
 /*main navbar*/
+#logo {
+	width: 30px;
+}
+
 #nav-top {
 	background-color: rgba(68, 50, 102, 0.97);
 	width: 100%;
@@ -35,7 +39,6 @@ nav li[class*=active] {
 
 
 
-
 .row {
 	width: 100%;
 	padding: 0px;
@@ -51,10 +54,6 @@ nav li[class*=active] {
 	min-height: 100vh;
 	max-width: 100%;
 	margin-top: 60px;
-	background: url(../images/lavender.png);
-	background-position: left;
-	background-repeat: repeat-y;
-	background-attachment: fixed;
 }
 
 
@@ -77,13 +76,16 @@ footer {
 
 
 /*landing page*/
-#jumbotron {
-	background: url(../images/bg.png);
-	background-size: cover;
+#jumbo-land {
 	height: 100vh;
+	background-color: #333;
+	border-radius: 0;
+	color: #333;
+	background: url(../images/lavender-wood.jpg);
+	background-size: cover;
+	background-position: center;
 	position: relative;
 }
-
 #jumbotron div {
 	position: absolute;
 	width: 25%;
@@ -94,17 +96,6 @@ footer {
 
 .jumbotron hr {
 	background-color: #fff;
-}
-
-#jumbo-land {
-	height: 100vh;
-	background-color: #333;
-	border-radius: 0;
-	color: #333;
-	background: url(../images/land.jpg);
-	background-size: cover;
-	background-position: center;
-	position: relative;
 }
 
 #jumbo-land .container {
@@ -124,8 +115,9 @@ footer {
 /*home page*/
 #home-landing {
 	background-color: #8C489F;
-	background: url(../images/lavender-bg.JPG);
-	background-size: cover;
+	background: url(../images/bgwhite.jpg);
+	background-size: 100%;
+	background-position: bottom;
 	color: #333;
 	padding: 10%;
 	width: 100%;
@@ -171,15 +163,15 @@ footer {
 
 #topic2 {
 	height: 50vh;
-	background: url(../images/topic2.jpg);
+	background: url(../images/topic1.jpg);
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: center;
+	background-position: center;	
 }
 
 
-#card1 .card-title,
-#card2 .card-title {
+
+.card-title{
 	background-color: #C3C3E5;
 	color: #333;
 }
@@ -198,6 +190,7 @@ footer {
 
 .carousel-item {
 	height: 80vh;
+	backface-visibility: unset;
 }
 
 .carousel-item img {
@@ -226,9 +219,8 @@ footer {
 /*contact page*/
 iframe {
 	width: 100%;
-	height: 100%;
+	height: 80%;
 	padding: 5px;
-	overflow: hidden;
 }
 
 .form-control {
@@ -303,6 +295,12 @@ iframe {
 .about-tags {
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
+}
+
+#aboutimage {
+	width: 2000px;
+
+
 }
 /*end about page*/
 
@@ -411,11 +409,12 @@ div[data-toggle="modal"] > img {
 	}
 
 	#home-landing {
-		background-color: #8C489F;
-		color: #fff;
-		padding: 10%;
-		width: 100%;
 		margin-top: 56px;
+	}
+
+	#topic1,
+	#topic2 {
+		height: 50vh;
 	}
 
 	#head-gall > h1 {
@@ -439,7 +438,11 @@ div[data-toggle="modal"] > img {
 	#container-contact,
 	#container-home, 
 	#container-faq {
-		margin-top: 0px;
+		margin-top: 60px;
+	}
+
+	iframe {
+		height: auto;
 	}
 
 
