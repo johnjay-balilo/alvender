@@ -358,7 +358,20 @@ div[data-toggle="modal"] > img {
 
 
 
+/*what is page*/
 
+#container-faq .card-header {
+	background-color: #C3C3E5;
+}
+
+#container-faq .card-body {
+	background-color: #F1F0FF;
+}
+
+
+
+
+/*end what is page*/
 
 
 
