@@ -8,8 +8,8 @@
 	<!-- fontawesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-	<!-- animate css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<!-- animation css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -21,16 +21,16 @@
 	<link rel="icon" type="image/gif/png" href="assets/images/icon.png">
 
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 
 
 
-	<title> FAQs </title>
+	<title> FAQs | Alvender </title>
 </head>
 <body>
 
 	<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg fixed-top">
-		<a href="home.html" class="navbar-brand"> <img id="logo" src="assets/images/icon2.png"> Alvender </a>
+		<a href="home.html" class="navbar-brand"> <img id="logo" src="assets/images/icon.png"> Alvender </a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
 			<span class="navbar-toggler-icon"></span>
@@ -38,16 +38,14 @@
 
 		<div id="navcontent" class="collapse navbar-collapse">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a href="home.html" class="nav-link"> Home </a>
 				</li>
-				<li class="nav-item dropdown">
+				<li class="nav-item dropdown active">
 					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Info </a>
 					<div class="dropdown-menu">
-						<a href="what-is.html" class="dropdown-item"> What is </a>
+						<a href="what-is.html" class="dropdown-item active"> What is </a>
 						<a href="dos-and-donts.html" class="dropdown-item"> Dos and Don'ts </a>
-						<div class="dropdown-divider"></div>
-						<a href="faq.html" class="dropdown-item"> FAQ </a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -65,27 +63,31 @@
 
 	<div id="container-faq">
 
-	
+		<header id="head-faq">
+			<h1 class="display-3 text-center animated fadeIn"> FAQs </h1>
+		</header>
+
+		<div class="row">
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+
 
 
 		<div class="container-fluid">
-			<div id="faq" class="accordion">
+
+			<div id="faq" class="accordion animated fadeIn">
 				<div class="card">
 					<div class="card-header">
 						<h5 class="mb-0"> 
 							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq1">
-								What?
+								What is Alzheimer's disease?
 							</button>
 						</h5>
 					</div>
 					<div id="faq1" class="collapse" data-parent="#faq">
 						<div class="card-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<p>Alzheimer's disease is the most common cause of dementia, which is the loss of intellectual and social abilities severe enough to interfere with daily functioning. Dementia occurs in people with Alzheimer's disease because healthy brain tissue degenerates, causing a steady decline in memory and mental abilities.</p>
 						</div>
 					</div>
 				</div>
@@ -94,18 +96,18 @@
 					<div class="card-header">
 						<h5> 
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq2">
-								When?
+								What causes Alzheimer's disease?
 							</button>
 						</h5>
 					</div>
 					<div id="faq2" class="collapse" data-parent="#faq">
 						<div class="card-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<p>There is destruction of brain cells disrupting the transmitters that carry the messages in the brain, particularly those responsible for storing memories.</p>
+							
+							<p>The cause of the destruction remains of the cells unknown.</p>
+							
+							<p>Studies show that genetic factors play part in the development of the disease.
+							The neurotransmitters 'acetylcholine' and 'norepinephrine' are hypothesized to be hypoactive in Alzheimer's disease.</p>
 						</div>
 					</div>
 				</div>
@@ -114,18 +116,82 @@
 					<div class="card-header">
 						<h5> 
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq3">
-								Where?
+								What can be done?
 							</button>
 						</h5>
 					</div>
 					<div id="faq3" class="collapse" data-parent="#faq">
 						<div class="card-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<p>Currently there is no cure for Alzheimer's Disease.</p>
+							
+							<p>General treatment approach to patient is to provide supportive medical care, pharmacological treatment for specific symptoms, including disruptive behavior, and emotional support for patients and their families.</p>
+					
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<h5> 
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq4">
+								What are the signs and symptoms?
+							</button>
+						</h5>
+					</div>
+					<div id="faq4" class="collapse" data-parent="#faq">
+						<div class="card-body">
+							<p>Alzheimer's disease is the most common cause of dementia, which is the loss of intellectual and social abilities severe enough to interfere with daily functioning. Dementia occurs in people with Alzheimer's disease because healthy brain tissue degenerates, causing a steady decline in memory and mental abilities. Increasing and persistent forgetfulness, especially of recent events or simple directions, what begins as mild forgetfulness persists and worsens. People with Alzheimer's routinely misplace things, often putting them in illogical locations. They frequently forget names, and eventually, they may forget the names of family members and everyday objects.</p>
+							
+							<p>Difficulties with abstract thinking. People with Alzheimer's may initially have trouble balancing their checkbook, a problem that progresses to trouble recognizing and dealing with numbers.</p>
+							
+							<p>Difficulties finding the right word to express thoughts or even follow conversations. Eventually, reading and writing also are affected.</p>
+							
+							<p>Disorientation to time and dates. They may find themselves lost in familiar surroundings.</p>
+							
+							<p>Loss of judgment. Solving everyday problems, such as knowing what to do if food on the stove is burning, becomes increasingly difficult, eventually impossible.</p>
+							
+							<p>Difficulties performing familiar and routine tasks that require sequential steps, such as cooking, become a struggle as the disease progresses. Eventually, forget how to do even the most basic things.</p>
+							
+							<p>Personality changes. People with Alzheimer's may exhibit mood swings. They may express distrust in others, show increased stubbornness and withdraw socially.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<h5> 
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq5">
+								What are the risk factors?
+							</button>
+						</h5>
+					</div>
+					<div id="faq5" class="collapse" data-parent="#faq">
+						<div class="card-body">
+							<p>Age. Alzheimer's usually affects people older than 65, but can rarely, affect those younger than 40.  The average age at diagnosis is about 80.  Less than 5 percent of people between 65 and 74 have Alzheimer's.  For people 85 and older, that number jumps to nearly 50 percent.</p>
+							
+							<p>Heredity.  Your risk of developing Alzheimer's appears to be slightly higher if a first-degree relative -parent, sister or brother - has the disease.</p>
+
+							<p>Lifestyle.  The same factors that put you at risk of heart diseases, such as high blood pressure and high cholesterol, may also increase the likelihood that you'll develop Alzheimer's disease.  And, keeping your body fit isn't your only concern - you've got to exercise your mind as well.</p>
+
+							<p>Head injury.  The observation that some ex-boxers eventually develop dementia leads to the question of whether serious traumatic injury to the head (for example, with a prolonged loss of consciousness) may be a risk factor for Alzheimer's.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<h5> 
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq6">
+								How many suffer?
+							</button>
+						</h5>
+					</div>
+					<div id="faq6" class="collapse" data-parent="#faq">
+						<div class="card-body">
+							<p>11 million people suffer worldwide.</p>
+							<p>About 5% of people reaching 65 are affected.</p>
+							<p>15-25% of people reaching 85 are affected.</p>
+							<p>Late stage of disease requires one total dependence and inactivity representing an enormous burden on family and health care delivery.</p>
 						</div>
 					</div>
 				</div>

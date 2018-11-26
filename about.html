@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- animate css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -29,8 +29,22 @@
 </head>
 <body>
 
-	<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg fixed-top">
-		<a href="home.html" class="navbar-brand"> <img id="logo" src="assets/images/icon2.png"> Alvender </a>
+	
+
+
+	<div id="container-about" class="container-fluid px-0">	
+
+		<section id="jumbotron-about" class="jumbotron animatedParent">
+			<h1 id="landing-about" class="text-center animated fadeIn slower"> BEHIND THE SCENES </h1>
+
+			<a id="down" href="#goto-missionvision" class="d-block text-center animated fadeIn slower">
+				<i class="fas fa-chevron-down"></i>
+			</a>
+		</section> <!-- end jumbotron -->
+
+
+		<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg sticky-top">
+		<a href="home.html" class="navbar-brand"> <img id="logo" src="assets/images/icon.png"> Alvender </a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
 			<span class="navbar-toggler-icon"></span>
@@ -46,8 +60,6 @@
 					<div class="dropdown-menu">
 						<a href="what-is.html" class="dropdown-item"> What is </a>
 						<a href="dos-and-donts.html" class="dropdown-item"> Dos and Don'ts </a>
-						<div class="dropdown-divider"></div>
-						<a href="faq.html" class="dropdown-item"> FAQ </a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -63,55 +75,55 @@
 		</div> <!-- end navcontent -->
 	</nav> <!-- end nav -->
 
-
-	<div id="container-about" class="container-fluid px-0">	
-
-		<section id="jumbotron-about" class="jumbotron">
-			<h1 id="landing-about" class="text-center animated zoomIn"> MEET THE TEAM </h1>
-
-			<a id="down" href="#mission" class="d-block text-center">
-				<i class="fas fa-chevron-down"></i>
-			</a>
-		</section> <!-- end jumbotron -->
-
 		<div class="row last">
-			<section id="mission" class="p-5">
-				<h2 class="about-tags mb-5"> Mission and Vision </h2>
-				<p class="text-justify">
-					Our mission is to raise awareness of Alzheimer's disease and other types of dementia in the Philippines, working hand-in-hand with the official organization dedicated to the advocacy of the said disease, Alzheimer’s Disease Association of the Philippines (ADAP). 
-				</p>
+			<section id="missionvision" class="p-5 animatedParent" data-appear-top-offset="-200">
+				<span id="goto-missionvision"></span>
+				<h2 class="about-tags mb-5 animated fadeInLeft"> Mission and Vision </h2>
+				<div class="animated fadeInLeft">
+					<p class="text-justify">
+						Our mission is to raise awareness of Alzheimer's disease and other types of dementia in the Philippines, working hand-in-hand with the official organization dedicated to the advocacy of the said disease, Alzheimer’s Disease Association of the Philippines (ADAP). 
+					</p>
 
-				<p class="text-justify">
-					The target readers are mainly the people surrounding those who have Alzheimer's or other forms of dementia, relaying crucial information so that people can have a basic understanding of what happens and how their mind and struggles work, and that they know how to act around victims of the disease.
-				</p>
+					<p class="text-justify">
+						The target readers are mainly the people surrounding those who have Alzheimer's or other forms of dementia, relaying crucial information so that people can have a basic understanding of what happens and how their mind and struggles work, and that they know how to act around victims of the disease.
+					</p>
 
-				<p class="text-justify"> 
-					We want to provide affected people with a good experience so that they will not be stressed out given their condition, and in turn allow them to live a happy life like normal human beings.
-				</p>
+					<p class="text-justify"> 
+						We want to provide affected people with a good experience so that they will not be stressed out given their condition, and in turn allow them to live a happy life like normal human beings.
+					</p>
+
+					<p class="text-justify">
+						Purple is our signature color, combining the calm stability of blue and the passionate energy of red. Purple makes a statement about our Association and our supporters: we are strong and unrelenting in the fight against Alzheimer’s disease.
+					</p>
+				</div>
 			</section>
 
-			<section id="vision" class="p-5 text-right">
-				<h2 class="about-tags mb-5"> Our Vision </h2>
-				<p class="text-justify"> 
-					We want to provide affected people with a good experience so that they will not be stressed out given their condition, so that they can live a happy life just like each and every one of us.
-				</p>
-			</section>
+			<section id="inspiration" class="p-5 text-right animatedParent">
+				<h2 class="about-tags mb-5 animated fadeInLeft"> Inspiration </h2>
 
-			<section class="p-5" class="row">
-				<h2 class="about-tags mb-5"> Inspiration </h2>
-
-					<div class="col-3">
+				<div class="row animated fadeInLeft">
+					<div class="col-12 col-md-6 col-lg-4 order-1 order-md-12">
 						<figure>
-							<img id="aboutimage" src="assets/images/about2.jpg" class="img-fluid">
+							<img id="aboutimage" src="assets/images/about2.jpg" class="img-fluid shadow">
 						</figure>
-						<figcaption> Mr./Mrs. </figcaption>
+						<figcaption class="mb-4"> Mr. & Mrs. Balilo </figcaption>
 					</div>
 
-					<div class="col-9">
-						<p class="text-justify"> The  </p>
+					<div class="col-12 col-md-6 col-lg-8 order-12 order-md-1">
+						<p class="text-justify"> The developer's inspiration for creating this website is his parents. His father was diagnosed with Alzheimer's disease while his mother was diagnosed with a form of hereditary dementia. Both of them have other conditions aside from these. </p>
+
+						<p class="text-justify">The developer only wishes that they are able live a happy life despite their condition, and that can only be achieved through the actions of the people around them. </p>
+
+						<p class="text-justify">Hopefully someday technological advancement in medicine and research can find a way to have something for the cure of the disease. </p>
 					</div>
+
+					
+				</div>
+				
+
 
 			</section>
+
 		</div>
 
 
@@ -159,6 +171,7 @@
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/css3-animate-it.js"></script>
 
 </body>
 </html>

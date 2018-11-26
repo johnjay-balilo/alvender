@@ -25,12 +25,12 @@
 
 
 
-	<title> Gallery </title>
+	<title> Gallery | Alvender </title>
 </head>
 <body>
 
 	<nav id="nav-top" class="navbar navbar-dark navbar-expand-lg fixed-top">
-		<a href="home.html" class="navbar-brand"> <img id="logo" src="assets/images/icon2.png"> Alvender </a>
+		<a href="home.html" class="navbar-brand"> <img id="logo" src="assets/images/icon.png"> Alvender </a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent">
 			<span class="navbar-toggler-icon"></span>
@@ -46,8 +46,6 @@
 					<div class="dropdown-menu">
 						<a href="what-is.html" class="dropdown-item"> What is </a>
 						<a href="dos-and-donts.html" class="dropdown-item"> Dos and Don'ts </a>
-						<div class="dropdown-divider"></div>
-						<a href="faq.html" class="dropdown-item"> FAQ </a>
 					</div>
 				</li>
 				<li class="nav-item active">
@@ -63,7 +61,7 @@
 		</div> <!-- end navcontent -->
 	</nav> <!-- end nav -->
 
-	<div id="container-gall" class="container-fluid px-0">	
+	<div id="container-gall" class="container-fluid px-0 animated fadeIn">	
 
 	
 
@@ -73,148 +71,101 @@
 			</header>
 
 			<div class="row">
-				<div id="left" class="col-md-4 d-none d-sm-block">
+				<div id="left" class="d-none d-md-block">
 					<h2> Categories </h2>
 					<div class="list-group">
-						<a href="#modal-1" class="list-group-item list-group-item-action"> Item 1 </a>
-						<a href="#" class="list-group-item list-group-item-action"> Item 2 </a>
-						<a href="#" class="list-group-item list-group-item-action"> Item 3 </a>
-						<a href="#" class="list-group-item list-group-item-action"> Item 4 </a>
-						<a href="#" class="list-group-item list-group-item-action"> Item 5 </a>
-						<a href="#" class="list-group-item list-group-item-action"> Item 6 </a>
+						<a href="#goto-seminars" class="list-group-item list-group-item-action"> Seminars </a>
+						<a href="#goto-run" class="list-group-item list-group-item-action"> Run for a Cause </a>
+
 					</div>
 				</div>
-				<div id="right" class="col-12 col-md-8">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-md-6">
-								<div class="card" data-toggle="modal" data-target="#modal-1">
-									<img class="card-img-top img-fluid" src="assets/images/ca1.jpg">
-									<h3 class="card-title text-center"> Tree </h3>
 
+				<div class="col-md-3 col-lg-2 d-none d-md-block">
+					
+				</div>
+				<div id="right" class="col-12 col-md-9 col-lg-10">
+					<div class="container">
+						<span id="goto-seminars"></span>
+						<h3 id="sem" class="text-justify display-6">Seminars</h3>
+						<div id="seminars" class="row">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card" data-toggle="modal" data-target="#modal-1">
+									<img class="card-img-top img-fluid" src="assets/images/seminar1.jpg">
+									<h3 class="card-title text-center"> Antipolo </h3>
 								</div>
 
 							</div> <!-- end card 1 -->
 
-							<div class="col-12 col-md-6">
+							<div class="col-12 col-md-6 col-lg-4">
 								<div class="card" data-toggle="modal" data-target="#modal-2">
-									<img class="card-img-top img-fluid" src="assets/images/ca2.jpg">
-									<h3 class="card-title text-center"> House </h3>
+									<img class="card-img-top img-fluid" src="assets/images/seminar2.jpg">
+									<h3 class="card-title text-center"> Taytay </h3>
 								</div>
 							</div> <!-- end card 2 -->
 
-							<div class="col-12 col-md-6">
+							<div class="col-12 col-md-6 col-lg-4">
 								<div class="card" data-toggle="modal" data-target="#modal-3">
-									<img class="card-img-top img-fluid" src="assets/images/ca3.jpg">
-									<h3 class="card-title text-center"> Lights </h3>
+									<img class="card-img-top img-fluid" src="assets/images/seminar3.jpg">
+									<h3 class="card-title text-center"> Cainta </h3>
 								</div>
 							</div> <!-- end card 3 -->
 
-							<div class="col-12 col-md-6">
+							<div class="col-12 col-md-6 col-lg-4">
 								<div class="card" data-toggle="modal" data-target="#modal-4">
-									<img class="card-img-top img-fluid" src="assets/images/cap1.jpg">
-									<h3 class="card-title text-center"> Angler </h3>
+									<img class="card-img-top img-fluid" src="assets/images/seminar4.jpg">
+									<h3 class="card-title text-center"> Binangonan </h3>
 								</div>
 							</div> <!-- end card 4 -->
 
-
-
-							<!-- modal 1 -->
-							<div id="modal-1" class="modal fade">
-								<div class="modal-dialog" role="document">
-
-									<div class="modal-content">
-										<header class="modal-header">
-											<h5 class="modal-title"> 3 </h5>
-											<button class="close" data-dismiss="modal">
-												<span> &times; </span>
-											</button>
-										</header> <!-- end modal header -->
-
-										<div class="modal-body">
-											<img class="img-fluid" src="assets/images/ca1.jpg">
-										</div> <!-- end modal body -->
-
-										<div class="modal-footer">
-											<button class="btn btn-danger" data-dismiss="modal"> Babayu </button>
-										</div>
-										
-									</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card" data-toggle="modal" data-target="#modal-5">
+									<img class="card-img-top img-fluid" src="assets/images/seminar5.jpg">
+									<h3 class="card-title text-center"> Morong </h3>
 								</div>
-							</div>
+							</div> <!-- end card 5 -->
 
-							<!-- modal 2 -->
-							<div id="modal-2" class="modal fade">
-								<div class="modal-dialog" role="document">
-
-									<div class="modal-content">
-										<header class="modal-header">
-											<h5 class="modal-title"> 4 </h5>
-											<button class="close" data-dismiss="modal">
-												<span> &times; </span>
-											</button>
-										</header> <!-- end modal header -->
-
-										<div class="modal-body">
-											<img class="img-fluid" src="assets/images/ca2.jpg">
-										</div> <!-- end modal body -->
-
-										<div class="modal-footer">
-											<button class="btn btn-danger" data-dismiss="modal"> Babayu </button>
-										</div>
-										
-									</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card" data-toggle="modal" data-target="#modal-6">
+									<img class="card-img-top img-fluid" src="assets/images/seminar6.jpg">
+									<h3 class="card-title text-center"> Tanay </h3>
 								</div>
-							</div>
+							</div> <!-- end card 6 -->
 
-							<!-- modal 3 -->
-							<div id="modal-3" class="modal fade">
-								<div class="modal-dialog" role="document">
 
-									<div class="modal-content">
-										<header class="modal-header">
-											<h5 class="modal-title"> hi </h5>
-											<button class="close" data-dismiss="modal">
-												<span> &times; </span>
-											</button>
-										</header> <!-- end modal header -->
 
-										<div class="modal-body">
-											<img class="img-fluid" src="assets/images/ca3.jpg">
-										</div> <!-- end modal body -->
-
-										<div class="modal-footer">
-											<button class="btn btn-danger" data-dismiss="modal"> Babayu </button>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-
-							<!-- modal 4 -->
-							<div id="modal-4" class="modal fade">
-								<div class="modal-dialog" role="document">
-
-									<div class="modal-content">
-										<header class="modal-header">
-											<h5 class="modal-title"> hello </h5>
-											<button class="close" data-dismiss="modal">
-												<span> &times; </span>
-											</button>
-										</header> <!-- end modal header -->
-
-										<div class="modal-body">
-											<img class="img-fluid" src="assets/images/cap1.jpg">
-										</div> <!-- end modal body -->
-
-										<div class="modal-footer">
-											<button class="btn btn-danger" data-dismiss="modal"> Babayu </button>
-										</div>
-										
-									</div>
-								</div>
-							</div>
+							
 						</div>
+
+						<span id="goto-run"></span>
+						<h3 id="ru" class="text-justify display-6 mt-4">Run for a Cause</h3>
+						<div id="seminars" class="row">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card" data-toggle="modal" data-target="#modal-7">
+									<img class="card-img-top img-fluid" src="assets/images/run1.png">
+									<h3 class="card-title text-center"> September 2018 </h3>
+								</div>
+
+							</div> <!-- end card 7 -->
+
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card" data-toggle="modal" data-target="#modal-8">
+									<img class="card-img-top img-fluid" src="assets/images/run2.png">
+									<h3 class="card-title text-center"> October 2018 </h3>
+								</div>
+
+							</div> <!-- end card 8 -->
+
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card" data-toggle="modal" data-target="#modal-9">
+									<img class="card-img-top img-fluid" src="assets/images/run3.png">
+									<h3 class="card-title text-center"> November 2018 </h3>
+								</div>
+
+							</div> <!-- end card 9 -->
+						</div>
+
+
+
 					</div>
 				</div>
 			</div>
@@ -239,7 +190,221 @@
 
 	
 
+	<!-- modal 1 -->
+	<div id="modal-1" class="modal fade">
+		<div class="modal-dialog" role="document">
 
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> Antipolo </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/seminar1.jpg">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- modal 2 -->
+	<div id="modal-2" class="modal fade">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> Taytay </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/seminar2.jpg">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- modal 3 -->
+	<div id="modal-3" class="modal fade">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> Cainta </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/seminar3.jpg">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- modal 4 -->
+	<div id="modal-4" class="modal fade">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> Binangonan </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/seminar4.jpg">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- modal 5 -->
+	<div id="modal-5" class="modal fade">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> Morong </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/seminar5.jpg">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- modal 6 -->
+	<div id="modal-6" class="modal fade">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> Tanay </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/seminar6.jpg">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- modal 7 -->
+	<div id="modal-7" class="modal fade">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> September 2018 </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/run1.png">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- modal 8 -->
+	<div id="modal-8" class="modal fade">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> October 2018 </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/run2.png">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- modal 9 -->
+	<div id="modal-9" class="modal fade">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+				<header class="modal-header">
+					<h5 class="modal-title"> November 2018 </h5>
+					<button class="close" data-dismiss="modal">
+						<span> &times; </span>
+					</button>
+				</header> <!-- end modal header -->
+
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/images/run3.png">
+				</div> <!-- end modal body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal"> Close </button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
 
 
 
